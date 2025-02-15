@@ -1,0 +1,9 @@
+{
+  "name": "temporal-polyfill-realworld-size",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -F 'example-*' build"
+  },
+  "license": "MIT"
+}
