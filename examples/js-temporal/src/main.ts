@@ -4,4 +4,6 @@ globalThis.Intl.DateTimeFormat = Intl.DateTimeFormat;
 // @ts-expect-error
 Date.prototype.toTemporalInstant = toTemporalInstant;
 
-console.log(Temporal.Now.zonedDateTimeISO().toString());
+const now = Temporal.Now.zonedDateTimeISO();
+console.log(now.toString());
+console.log(new Intl.DateTimeFormat('en-US').format(now.toPlainDate()));
