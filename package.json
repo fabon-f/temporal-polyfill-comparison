@@ -3,7 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm -F 'example-*' build"
+    "build": "pnpm -F 'example-*' build",
+    "stat": "node --no-warnings=ExperimentalWarning stat.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "console-table-printer": "^2.12.1"
+  }
 }
