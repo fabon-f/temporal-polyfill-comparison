@@ -12,6 +12,6 @@
     "vite": "catalog:"
   },
   "dependencies": {
-    "@js-temporal/polyfill": "^0.4.4"
+    "@js-temporal/polyfill": "catalog:"
   }
 }

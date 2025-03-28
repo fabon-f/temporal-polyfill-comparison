@@ -6,6 +6,12 @@ settings:
 
 catalogs:
   default:
+    '@js-temporal/polyfill':
+      specifier: ^0.4.4
+      version: 0.4.4
+    temporal-polyfill:
+      specifier: 0.3.0-beta.1
+      version: 0.3.0-beta.1
     typescript:
       specifier: 5.8.2
       version: 5.8.2
@@ -24,7 +30,7 @@ importers:
   examples/fullcalendar:
     dependencies:
       temporal-polyfill:
-        specifier: 0.3.0-beta.1
+        specifier: 'catalog:'
         version: 0.3.0-beta.1
     devDependencies:
       typescript:
@@ -37,7 +43,7 @@ importers:
   examples/js-temporal:
     dependencies:
       '@js-temporal/polyfill':
-        specifier: ^0.4.4
+        specifier: 'catalog:'
         version: 0.4.4
     devDependencies:
       typescript:
