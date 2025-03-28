@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@js-temporal/polyfill':
-      specifier: ^0.4.4
-      version: 0.4.4
+      specifier: ^0.5.0
+      version: 0.5.0
     temporal-polyfill:
       specifier: 0.3.0-beta.1
       version: 0.3.0-beta.1
@@ -44,7 +44,7 @@ importers:
     dependencies:
       '@js-temporal/polyfill':
         specifier: 'catalog:'
-        version: 0.4.4
+        version: 0.5.0
     devDependencies:
       typescript:
         specifier: 'catalog:'
@@ -214,8 +214,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@js-temporal/polyfill@0.4.4':
-    resolution: {integrity: sha512-2X6bvghJ/JAoZO52lbgyAPFj8uCflhTo2g7nkFzEQdXd/D8rEeD4HtmTEpmtGCva260fcd66YNXBOYdnmHqSOg==}
+  '@js-temporal/polyfill@0.5.0':
+    resolution: {integrity: sha512-iGNPcSSH3gJzWUy11gXGgplVo1Fe7/qesLa9JIztHF15i8Kn1SE2Kj9xMBsmIHxW2nvqKDMoM3t2WwQzPZk/eg==}
     engines: {node: '>=12'}
 
   '@rollup/rollup-android-arm-eabi@4.37.0':
@@ -367,9 +367,6 @@ packages:
   temporal-spec@0.3.0-beta:
     resolution: {integrity: sha512-iZsNNAyOAfHjGJg8SdZD77OD3lhQW3SOh0BhXzVUKCtbxoZ5tzt5npuvbeSZW+tyOZsQCgd1766A3hfwFulOJQ==}
 
-  tslib@2.8.1:
-    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
-
   typescript@5.8.2:
     resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
     engines: {node: '>=14.17'}
@@ -492,10 +489,9 @@ snapshots:
   '@esbuild/win32-x64@0.25.1':
     optional: true
 
-  '@js-temporal/polyfill@0.4.4':
+  '@js-temporal/polyfill@0.5.0':
     dependencies:
       jsbi: 4.3.0
-      tslib: 2.8.1
 
   '@rollup/rollup-android-arm-eabi@4.37.0':
     optional: true
@@ -641,8 +637,6 @@ snapshots:
       temporal-spec: 0.3.0-beta
 
   temporal-spec@0.3.0-beta: {}
-
-  tslib@2.8.1: {}
 
   typescript@5.8.2: {}
 
