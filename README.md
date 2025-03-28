@@ -5,9 +5,9 @@
 |                             |    minify |     gzip |    brotli |
 |-----------------------------|-----------|----------|-----------|
 | no polyfill                 |   0.14 kB |  0.13 kB |   0.12 kB |
-| `temporal-polyfill` via CDN |  56.92 kB | 20.24 kB |  18.19 kB |
-| `temporal-polyfill`         |  57.94 kB | 21.13 kB |  19.04 kB |
-| `@js-temporal/polyfill`     | 156.48 kB | 45.42 kB |  39.28 kB |
+| `temporal-polyfill` via CDN |  56.90 kB | 20.29 kB |  18.16 kB |
+| `temporal-polyfill`         |  57.92 kB | 21.14 kB |  19.07 kB |
+| `@js-temporal/polyfill`     | 156.48 kB | 45.49 kB |  39.28 kB |
 
 note:
 
