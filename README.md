@@ -6,8 +6,8 @@
 |-----------------------------|-----------|----------|-----------|
 | no polyfill                 |   0.14 kB |  0.13 kB |   0.12 kB |
 | `temporal-polyfill` via CDN |  56.90 kB | 20.26 kB |  18.16 kB |
-| `temporal-polyfill`         |  57.89 kB | 21.10 kB |  19.01 kB |
-| `@js-temporal/polyfill`     | 154.43 kB | 44.61 kB |  38.52 kB |
+| `temporal-polyfill`         |  57.92 kB | 21.10 kB |  19.00 kB |
+| `@js-temporal/polyfill`     | 154.54 kB | 44.65 kB |  38.54 kB |
 
 note:
 
