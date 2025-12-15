@@ -5,7 +5,7 @@ catalog:
   '@js-temporal/polyfill': ^0.5.1
   temporal-polyfill: ^0.3.0
   typescript: 5.9.3
-  vite: ^7.2.2
+  vite: ^7.2.7
 
 onlyBuiltDependencies:
   - esbuild
