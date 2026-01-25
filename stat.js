@@ -73,6 +73,7 @@ table.addRows([
     description: 'temporal-polyfill via CDN',
   },
   await getStatRow('fullcalendar', 'temporal-polyfill'),
+  await getStatRow('temporal-polyfill-lite', 'temporal-polyfill-lite'),
   await getStatRow('js-temporal', '@js-temporal/polyfill'),
 ]);
 
