@@ -5,22 +5,26 @@ import ctp from 'console-table-printer';
 
 const gzip = promisify(zlib.gzip);
 const brotliCompress = promisify(zlib.brotliCompress);
+const zstdCompress = promisify(zlib.zstdCompress)
 
 async function size(jsFiles) {
   let originalSize = 0;
   let gzipSize = 0;
   let brotliSize = 0;
+  let zstdSize = 0
   for (const js of jsFiles) {
     const code = await readFile(js);
-    const [gzipBuffer, brotliBuffer] = await Promise.all([gzip(code), brotliCompress(code)])
+    const [gzipBuffer, brotliBuffer, zstdBuffer] = await Promise.all([gzip(code), brotliCompress(code), zstdCompress(code)]);
     originalSize += code.byteLength;
     gzipSize += gzipBuffer.byteLength;
     brotliSize += brotliBuffer.byteLength;
+    zstdSize += zstdBuffer.byteLength;
   }
   return {
     original: originalSize,
     gzip: gzipSize,
     brotli: brotliSize,
+    zstd: zstdSize,
   };
 }
 
@@ -32,25 +36,28 @@ const kbFormatter = new Intl.NumberFormat('en', {
 });
 
 async function humanReadableStat(jsFiles) {
-  const { original, gzip, brotli } = await size(jsFiles);
+  const { original, gzip, brotli, zstd } = await size(jsFiles);
   const originalSizeWithUnit = kbFormatter.format(original / 1000);
   const gzipSizeWithUnit = kbFormatter.format(gzip / 1000);
   const brotliSizeWithUnit = kbFormatter.format(brotli / 1000);
+  const zstdSizeWithUnit = kbFormatter.format(zstd / 1000);
   return {
     original: originalSizeWithUnit,
     gzip: gzipSizeWithUnit,
     brotli: brotliSizeWithUnit,
+    zstd: zstdSizeWithUnit,
   };
 }
 
 async function getStatRow(dir, description) {
   const jsFiles = await Array.fromAsync(glob(`./examples/${dir}/dist/**/*.js`));
-  const { original, gzip, brotli } = await humanReadableStat(jsFiles);
+  const { original, gzip, brotli, zstd } = await humanReadableStat(jsFiles);
   return {
     description,
     original,
     gzip,
     brotli,
+    zstd,
   };
 }
 
@@ -60,6 +67,7 @@ const table = new ctp.Table({
     { name: 'original', title: 'minify' },
     { name: 'gzip', title: 'minify + gzip' },
     { name: 'brotli', title: 'minify + brotli' },
+    { name: 'zstd', title: 'minify + zstd' },
   ],
 });
 
