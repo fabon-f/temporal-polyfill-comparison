@@ -4,14 +4,13 @@
 
 |                             |    minify |     gzip |    brotli |
 |-----------------------------|-----------|----------|-----------|
-| no polyfill                 |   0.14 kB |  0.13 kB |   0.12 kB |
-| `temporal-polyfill-lite`    |  59.66 kB | 19.66 kB |  17.18 kB |
-| `temporal-polyfill` via CDN |  56.90 kB | 20.26 kB |  18.16 kB |
-| `temporal-polyfill`         |  57.92 kB | 21.10 kB |  19.00 kB |
-| `@js-temporal/polyfill`     | 154.54 kB | 44.65 kB |  38.54 kB |
+| no polyfill                 |   0.13 kB |  0.13 kB |   0.10 kB |
+| `temporal-polyfill-lite`    |  58.10 kB | 19.13 kB |  16.67 kB |
+| `temporal-polyfill`         |  56.40 kB | 20.15 kB |  18.11 kB |
+| `@js-temporal/polyfill`     | 159.88 kB | 45.45 kB |  39.34 kB |
 
 note:
 
-* The code is bundled by `vite` with default options (i.e. minified by `esbuild`, not `terser`).
+* The code is bundled by `vite` v8 (beta) with default options (i.e. minified by `oxc-minify`, not `terser`).
 
 See `examples` directory for details.

@@ -6,7 +6,4 @@ catalog:
   temporal-polyfill: ^0.3.0
   temporal-polyfill-lite: ^0.2.0
   typescript: 5.9.3
-  vite: ^7.2.7
-
-onlyBuiltDependencies:
-  - esbuild
+  vite: 8.0.0-beta.11
