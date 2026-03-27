@@ -5,5 +5,5 @@ catalog:
   '@js-temporal/polyfill': ^0.5.1
   temporal-polyfill: ^0.3.2
   temporal-polyfill-lite: ^0.3.3
-  typescript: 6.0.0-beta
-  vite: 8.0.1
+  typescript: 6.0.2
+  vite: 8.0.3
