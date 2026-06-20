@@ -73,13 +73,6 @@ const table = new ctp.Table({
 
 table.addRows([
   await getStatRow('native', 'no polyfill'),
-  {
-    ...await humanReadableStat([
-      './examples/fullcalendar/node_modules/temporal-polyfill/global.min.js',
-      ...await Array.fromAsync(glob('./examples/native/dist/**/*.js')),
-    ]),
-    description: 'temporal-polyfill via CDN',
-  },
   await getStatRow('fullcalendar', 'temporal-polyfill'),
   await getStatRow('temporal-polyfill-lite', 'temporal-polyfill-lite'),
   await getStatRow('temporal-polyfill-lite-calendars', 'temporal-polyfill-lite (calendars-full)'),
