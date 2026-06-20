@@ -13,8 +13,8 @@ catalogs:
       specifier: ^1.0.1
       version: 1.0.1
     temporal-polyfill-lite:
-      specifier: ^0.4.0
-      version: 0.4.0
+      specifier: ^0.4.1
+      version: 0.4.1
     typescript:
       specifier: 6.0.3
       version: 6.0.3
@@ -85,7 +85,7 @@ importers:
     dependencies:
       temporal-polyfill-lite:
         specifier: 'catalog:'
-        version: 0.4.0
+        version: 0.4.1
     devDependencies:
       typescript:
         specifier: 'catalog:'
@@ -98,7 +98,7 @@ importers:
     dependencies:
       temporal-polyfill-lite:
         specifier: 'catalog:'
-        version: 0.4.0
+        version: 0.4.1
     devDependencies:
       typescript:
         specifier: 'catalog:'
@@ -358,8 +358,8 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
-  temporal-polyfill-lite@0.4.0:
-    resolution: {integrity: sha512-Bwx9kt1xDsMqOKsRuprWwMaO+pOLa24/k1+CAcbSeFQkURnoPZibg4shuTPEDsqiinCefHiiN2jf4bnOXwNbbQ==}
+  temporal-polyfill-lite@0.4.1:
+    resolution: {integrity: sha512-LkyxGT+Kud8HD560XKBa8zDg3Eg0Rl0sQVBIeLR0DrOkC1ezCsrkH+9MCMhqlYQDMayxtAhoqh6ObIfGgovqtQ==}
 
   temporal-polyfill@1.0.1:
     resolution: {integrity: sha512-N2SoI9olnW7BUsU8RosDphZQl9s+WJ8O7PoJMFCr/e5/1rFkVI4GNOWaSeySG+UoP04foPYsnLWbJmbXOiShZg==}
@@ -613,7 +613,7 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  temporal-polyfill-lite@0.4.0: {}
+  temporal-polyfill-lite@0.4.1: {}
 
   temporal-polyfill@1.0.1:
     dependencies:
