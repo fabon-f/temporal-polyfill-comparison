@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "console-table-printer": "^2.15.0",
+    "console-table-printer": "^2.16.1",
     "typescript": "catalog:"
   }
 }
