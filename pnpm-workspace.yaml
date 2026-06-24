@@ -6,7 +6,7 @@ catalog:
   temporal-polyfill: ^1.0.1
   temporal-polyfill-lite: ^0.4.1
   typescript: 6.0.3
-  vite: 8.0.16
+  vite: 8.1.0
 
 minimumReleaseAgeExclude:
   - temporal-polyfill-lite
