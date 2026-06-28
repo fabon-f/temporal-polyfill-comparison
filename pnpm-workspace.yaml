@@ -4,7 +4,7 @@ packages:
 catalog:
   '@js-temporal/polyfill': ^0.5.1
   temporal-polyfill: ^1.0.1
-  temporal-polyfill-lite: ^0.4.1
+  temporal-polyfill-lite: ^0.4.2
   typescript: 6.0.3
   vite: 8.1.0
 
