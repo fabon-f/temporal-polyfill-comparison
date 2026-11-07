@@ -3,12 +3,10 @@ packages:
 
 catalog:
   '@js-temporal/polyfill': ^0.5.1
-  temporal-polyfill: ^1.0.7
+  temporal-polyfill: ^1.0.8
   temporal-polyfill-lite: ^1.0.0
   typescript: 7.0.2
-  vite: ^8.3.5
+  vite: ^8.3.6
 
 minimumReleaseAgeExclude:
   - temporal-polyfill-lite
-  - temporal-polyfill@1.0.7
-  - temporal-utils@1.0.4
