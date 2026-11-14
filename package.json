@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "pnpm -F 'example-*' build",
-    "stat": "node --no-warnings=ExperimentalWarning stat.js"
+    "stat": "node stat.js"
   },
   "license": "MIT",
   "dependencies": {
