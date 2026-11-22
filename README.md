@@ -10,7 +10,7 @@
 | `temporal-polyfill-lite`<br>(calendars-full) |  61.96 kB | 22.01 kB |  19.42 kB | 22.85 kB |
 | `temporal-polyfill` (full)                   |  67.17 kB | 23.11 kB |  20.70 kB | 24.24 kB |
 | `@js-temporal/polyfill`                      | 159.73 kB | 45.45 kB |  39.30 kB | 47.31 kB |
-| `@formatjs/temporal`                         | 196.48 kB | 56.57 kB |  40.32 kB | 49.81 kB |
+| `@formatjs/temporal` (**WIP**)               | 196.48 kB | 56.57 kB |  40.32 kB | 49.81 kB |
 
 note:
 
