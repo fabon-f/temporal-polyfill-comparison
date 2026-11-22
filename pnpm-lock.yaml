@@ -173,6 +173,9 @@ settings:
 
 catalogs:
   default:
+    '@formatjs/temporal':
+      specifier: ^2.0.0
+      version: 2.0.0
     '@js-temporal/polyfill':
       specifier: ^0.5.1
       version: 0.5.1
@@ -199,6 +202,19 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 7.0.2
+
+  examples/formatjs:
+    dependencies:
+      '@formatjs/temporal':
+        specifier: 'catalog:'
+        version: 2.0.0
+    devDependencies:
+      typescript:
+        specifier: 'catalog:'
+        version: 7.0.2
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.8
 
   examples/js-temporal:
     dependencies:
@@ -284,6 +300,9 @@ packages:
 
   '@emnapi/wasi-threads@2.2.0':
     resolution: {integrity: sha512-JP7OYH38Q7+pyTAe14raZHLQIK7BDKbdwji+Xi3pcd/6QkJYQH3SX4wu6EplGrGJWRepoNzedfm0G3B9Z4e9Rw==}
+
+  '@formatjs/temporal@2.0.0':
+    resolution: {integrity: sha512-9B/Hf0Sr5Xi3pqEI7BEiw/S69EdU7EVQ8JaK+NV0Cm5E3bjSiTT8AHMbYrgWBWphfA9rLeeD/WEqImXXyySjrg==}
 
   '@js-temporal/polyfill@0.5.1':
     resolution: {integrity: sha512-hloP58zRVCRSpgDxmqCWJNlizAlUgJFqG2ypq79DCvyv9tHjRYMDOcPFjzfl/A1/YxDvRCZz8wvZvmapQnKwFQ==}
@@ -736,6 +755,8 @@ snapshots:
     dependencies:
       tslib: 2.9.1
     optional: true
+
+  '@formatjs/temporal@2.0.0': {}
 
   '@js-temporal/polyfill@0.5.1':
     dependencies:

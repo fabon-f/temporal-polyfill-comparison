@@ -78,6 +78,7 @@ table.addRows([
   await getStatRow('temporal-polyfill-lite-calendars', 'temporal-polyfill-lite (calendars-full)'),
   await getStatRow('temporal-polyfill-full', 'temporal-polyfill (full)'),
   await getStatRow('js-temporal', '@js-temporal/polyfill'),
+  await getStatRow('formatjs', '@formatjs/temporal'),
 ]);
 
 table.printTable();
